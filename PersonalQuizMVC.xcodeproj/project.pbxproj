@@ -56,15 +56,39 @@
 		9B22EBE828AABA7C008866A0 /* PersonalQuizMVC */ = {
 			isa = PBXGroup;
 			children = (
-				9B22EBE928AABA7C008866A0 /* AppDelegate.swift */,
-				9B22EBEB28AABA7C008866A0 /* SceneDelegate.swift */,
-				9B22EBED28AABA7C008866A0 /* ViewController.swift */,
-				9B22EBEF28AABA7C008866A0 /* Main.storyboard */,
+				9B3A786328AD46AE007604CF /* Support Files */,
+				9B3A786528AD46EE007604CF /* ViewControllers */,
+				9B3A786428AD46CA007604CF /* Storyboards */,
 				9B22EBF228AABA7F008866A0 /* Assets.xcassets */,
-				9B22EBF428AABA7F008866A0 /* LaunchScreen.storyboard */,
 				9B22EBF728AABA7F008866A0 /* Info.plist */,
 			);
 			path = PersonalQuizMVC;
+			sourceTree = "<group>";
+		};
+		9B3A786328AD46AE007604CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B22EBE928AABA7C008866A0 /* AppDelegate.swift */,
+				9B22EBEB28AABA7C008866A0 /* SceneDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		9B3A786428AD46CA007604CF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9B22EBEF28AABA7C008866A0 /* Main.storyboard */,
+				9B22EBF428AABA7F008866A0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9B3A786528AD46EE007604CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B22EBED28AABA7C008866A0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
