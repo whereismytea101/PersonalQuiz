@@ -42,3 +42,37 @@ enum AnimalType: Character {
     }
 }
 
+extension Question {
+    
+    static func getQuestions() -> [Question] {
+        return [
+            Question(title: "Какую пищу предпочитаете?",
+                     type: .single,
+                     answers: [
+                        Answer(title: "Стейк", type: .dog),
+                        Answer(title: "Рыба", type: .cat),
+                        Answer(title: "Морковь", type: .rabbit),
+                        Answer(title: "Кукуруза", type: .turtle)
+                     ]
+            ),
+            Question(title: "Что вам нравится больше?",
+                     type: .multiple,
+                     answers: [
+                        Answer(title: "Плавать", type: .dog),
+                        Answer(title: "Спать", type: .cat),
+                        Answer(title: "Обниматься", type: .rabbit),
+                        Answer(title: "Есть", type: .turtle)
+                     ]
+            ),
+            Question(title: "Любите ли вы поездки на машине?",
+                     type: .ranged,
+                     answers: [
+                        Answer(title: "Ненавижу", type: .cat),
+                        Answer(title: "Нервничаю", type: .rabbit),
+                        Answer(title: "Не замечаю", type: .turtle),
+                        Answer(title: "Обожаю", type: .dog),
+                     ]
+            )
+        ]
+    }
+}
