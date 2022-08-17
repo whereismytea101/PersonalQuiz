@@ -181,26 +181,78 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UqW-FT-rHL">
+                                <rect key="frame" x="0.0" y="91" width="320" height="4"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="p6t-Ap-tlA">
+                                <rect key="frame" x="20" y="226.5" width="280" height="115.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BsX-4H-hLa">
+                                        <rect key="frame" x="-2" y="0.0" width="284" height="31"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b70-UZ-VbA">
+                                        <rect key="frame" x="0.0" y="46" width="280" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-70-sRP">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B02-Na-jMb">
+                                                <rect key="frame" x="140" y="0.0" width="140" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCJ-nP-B98">
+                                        <rect key="frame" x="0.0" y="82.5" width="280" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Ответить"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmF-Yd-PVr">
+                                <rect key="frame" x="20" y="103" width="280" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wpE-Pl-WoM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wpE-Pl-WoM" firstAttribute="trailing" secondItem="p6t-Ap-tlA" secondAttribute="trailing" constant="20" id="2OG-aL-uMs"/>
+                            <constraint firstItem="UqW-FT-rHL" firstAttribute="leading" secondItem="wpE-Pl-WoM" secondAttribute="leading" id="6GC-gH-hai"/>
+                            <constraint firstItem="UqW-FT-rHL" firstAttribute="top" secondItem="wpE-Pl-WoM" secondAttribute="top" id="7q0-6s-hDi"/>
                             <constraint firstItem="pBq-u7-3vD" firstAttribute="centerY" secondItem="BzT-13-kVm" secondAttribute="centerY" id="8Rq-6g-lKf">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
                             <constraint firstItem="pBq-u7-3vD" firstAttribute="leading" secondItem="wpE-Pl-WoM" secondAttribute="leading" constant="20" id="8vw-Zn-mqa"/>
+                            <constraint firstItem="WmF-Yd-PVr" firstAttribute="top" secondItem="UqW-FT-rHL" secondAttribute="bottom" constant="8" id="A9U-0K-Lst"/>
+                            <constraint firstItem="p6t-Ap-tlA" firstAttribute="centerY" secondItem="BzT-13-kVm" secondAttribute="centerY" id="BIN-Bf-Byz">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="16"/>
+                            </constraint>
                             <constraint firstItem="WEz-y7-0ny" firstAttribute="centerY" secondItem="BzT-13-kVm" secondAttribute="centerY" id="JS3-V7-xez">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
+                            <constraint firstItem="p6t-Ap-tlA" firstAttribute="leading" secondItem="wpE-Pl-WoM" secondAttribute="leading" constant="20" id="caJ-FF-WMU"/>
+                            <constraint firstItem="wpE-Pl-WoM" firstAttribute="trailing" secondItem="WmF-Yd-PVr" secondAttribute="trailing" constant="20" id="gwu-QY-Tn5"/>
                             <constraint firstItem="wpE-Pl-WoM" firstAttribute="trailing" secondItem="pBq-u7-3vD" secondAttribute="trailing" constant="20" id="k6K-aG-K13"/>
                             <constraint firstItem="WEz-y7-0ny" firstAttribute="leading" secondItem="wpE-Pl-WoM" secondAttribute="leading" constant="20" id="ldv-9N-OL5"/>
+                            <constraint firstItem="WmF-Yd-PVr" firstAttribute="leading" secondItem="wpE-Pl-WoM" secondAttribute="leading" constant="20" id="vWk-UP-0TV"/>
+                            <constraint firstItem="wpE-Pl-WoM" firstAttribute="trailing" secondItem="UqW-FT-rHL" secondAttribute="trailing" id="x5t-eR-Pog"/>
                             <constraint firstItem="wpE-Pl-WoM" firstAttribute="trailing" secondItem="WEz-y7-0ny" secondAttribute="trailing" constant="20" id="yBl-4O-O1n"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pBq-u7-3vD"/>
+                                <exclude reference="WEz-y7-0ny"/>
                             </mask>
                         </variation>
                     </view>
